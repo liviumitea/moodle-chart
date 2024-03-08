@@ -656,7 +656,7 @@ mariadb:
       hostPath: ""
       ## @param mariadb.primary.persistence.existingClaim Name of an existing `PersistentVolumeClaim` for MariaDB primary replicas
       ##
-      existingClaim: "mariadb-moodle-pvc"
+      existingClaim: ""
 ## External database configuration
 ##
 externalDatabase:
