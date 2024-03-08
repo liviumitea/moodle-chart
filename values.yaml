@@ -236,18 +236,18 @@ persistence:
     - ReadWriteOnce
   ## @param persistence.size PVC Storage Request for Moodle
   ##
-  size: 8Gi
+  size: 10Gi
   ## @param persistence.existingClaim An Existing PVC name
   ## Requires persistence.enabled: true
   ## If defined, PVC must be created manually before volume will be bound
   ##
-  existingClaim: ""
+  existingClaim: "moodle-pvc"
   ## @param persistence.hostPath Host mount path for Moodle
   ## Requires persistence.enabled: true
   ## Requires persistence.existingClaim: nil|false
   ## Default: nil.
   ##
-  hostPath: "/data-nfs/moodle"
+  hostPath: ""
   ## @param persistence.annotations Persistent Volume Claim annotations
   ##
   annotations: {}
